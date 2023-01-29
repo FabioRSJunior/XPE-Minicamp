@@ -1,0 +1,53 @@
+<html>
+    <script>
+        // SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO, DIVISÃO, RESTO, PORCENTAGEM
+        function calculo(operacao, num1, num2){
+            var retorno 
+
+            if(operacao == "+")
+            {
+                retorno = num1 + num2
+            }
+            
+            if(operacao == "-")
+            {
+                retorno = num1 - num2
+            }
+
+            if(operacao == "*")
+            {
+                retorno = num1 * num2
+            }
+
+            if(operacao == "/")
+             if (num2 == 0){retorno = "Operação invalida"} 
+             else{ 
+             retorno = num1 / num2
+             }
+
+             if(operacao == "%")
+            {
+                retorno = num1 % num2
+            }
+
+            if(operacao == "%%")
+            {
+                retorno = ((num1 * num2) / 100 ) + "%"
+            }
+
+
+             return retorno
+        }
+
+        console.log(calculo("+",1,1))
+        console.log(calculo("-",1,1))
+
+        console.log(calculo("*",1,1))
+        console.log(calculo("/",1,1))
+        console.log(calculo("/",1,0))
+
+        console.log(calculo("%",1,1))
+        console.log(calculo("%%",20,30))
+        
+    </script>
+</html>

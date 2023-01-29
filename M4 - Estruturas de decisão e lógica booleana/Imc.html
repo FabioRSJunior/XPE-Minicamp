@@ -1,0 +1,47 @@
+<html>
+    <script>
+        // imc = peso /(altura * altura)
+        function imc(peso,altura){
+            var valorimc = peso /(altura * altura) 
+            var classificacao
+
+            if (valorimc >= 40)
+            {
+                classificacao = "Obsidade grau III ou Mórbida"
+            }
+            else if(valorimc >= 35){
+                classificacao = "Obsidade grau II"
+            } 
+            else if (valorimc >= 30){
+                classificacao = "Obsidade grau I"
+            }
+            else if (valorimc >=25){
+                classificacao = "Sobrepeso"
+            }
+            else if (valorimc >= 18.5){
+                classificacao = "Peso normal"
+            }
+            else{
+            //else if(valorimc < 18.5){
+                classificacao = "Abaixo do peso"
+            }
+
+            return classificacao
+
+        }
+        console.log(imc(50,1.70))
+        console.log(imc(55,1.70))
+        console.log(imc(60,1.70))
+        console.log(imc(65,1.70))
+        console.log(imc(70,1.70))
+        console.log(imc(75,1.70))
+        console.log(imc(80,1.70))
+        console.log(imc(85,1.70))
+        console.log(imc(100,1.70))
+        console.log(imc(110,1.70))
+        console.log(imc(120,1.70))
+        console.log(imc(150,1.70))
+
+
+    </script>
+</html>
