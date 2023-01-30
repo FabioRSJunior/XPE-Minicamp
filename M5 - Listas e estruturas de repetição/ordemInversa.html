@@ -1,0 +1,37 @@
+<html>
+    <script>
+
+        // Crie uma função que recebe uma palavra como parametro e retona esta palavra invertida 
+
+        function inverte(palavra){
+        
+            var inversa = "";
+            for( var i = palavra.length-1 ; i > -1 ; i--){
+                inversa = inversa + palavra[i] 
+            }
+            return inversa
+        }
+
+        console.log(inverte("123456"))
+        console.log(inverte("Fabio"))
+
+        function invertewhile(palavra){
+            var inversa = ""
+            aux = palavra.length-1
+
+            while(aux > -1){
+                inversa = inversa + palavra[aux] 
+                aux--
+            }
+
+            return inversa
+        }
+
+        console.log("WHILE:")
+        console.log(invertewhile("123456"))
+        console.log(invertewhile("Fabio"))
+
+
+
+    </script>
+</html>

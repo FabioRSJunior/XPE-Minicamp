@@ -1,0 +1,41 @@
+<html>
+    <script>
+        var carros = ["gol","palio","uno",1]
+        console.log(carros)
+
+        //Acessando elementos:
+        
+        var primeirocarro = carros[0] 
+        console.log("primeiro carro:" + primeirocarro )
+
+        // tamanho do array 
+        console.log(carros.length);
+
+        // Acessando ultima posição do array 
+        console.log(carros[carros.length -1 ])
+
+        //inserindo novos dados 
+        carros[4] = "Sandero"
+        console.log(carros)
+
+        //inserindo sem saber o indice 
+        carros[carros.length] = "gol bolinha"
+        console.log(carros)
+
+        carros.push("Polo")
+        console.log(carros)
+
+        //removendo o ultimo elemento da lista
+        console.log(carros.pop())
+
+        //Inserindo no inicio da lista 
+        carros.unshift("jetta")
+        console.log(carros)
+
+        //removendo o primeiro elemento da lista
+        console.log(carros.shift())
+        console.log(carros)
+
+
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <script>
+        // Crie uma função para verificar se um numero se encotra em uma lista 
+
+        function buscaNumero(numero){
+        var lista = [1,2,3,4,5,6,7,8,9,10,13]
+        var aux = true
+
+        for(var i = 0; i < lista.length ; i ++){
+            
+            if (lista[i] == numero){
+                return ("O numero " + numero + "  esta na lista na posicao:" + i )
+                aux = false
+                break
+            }
+        }
+
+        if(aux == true){
+            return "O numero: "+ numero +" nao esta na lista"
+        }
+        
+        }
+
+        console.log(buscaNumero(1))
+        console.log(buscaNumero(10))
+        console.log(buscaNumero(12))
+        console.log(buscaNumero(13))
+        
+    </script>
+</html>
