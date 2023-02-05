@@ -1,0 +1,17 @@
+body {
+    padding: 10px;
+    background-color: lightslategray;
+}
+
+#resultado{
+    margin-top: 50px;
+}
+
+input{
+    width: 100px;
+}
+
+label{
+    font-family: monospace;
+    margin-bottom: 10px;
+}
