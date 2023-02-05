@@ -1,0 +1,41 @@
+body {
+    padding: 10px;
+    background-color: lightslategray;
+}
+
+.h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
+.button{
+    cursor: pointer;
+}
+
+table{
+    margin: auto;
+}
+
+th,td{
+    padding: 6px;
+}
+
+
+/* É sómente o tr do Tbody */
+tbody tr:nth-child(even) {
+    background-color: grey
+}
+
+    tbody tr:hover {
+    font-weight: bold;
+    user-select: none;
+
+}
+
+.title{
+    color:darkred;
+}
+
+.auth{
+    font: italic;
+    text-align: right;
+}
